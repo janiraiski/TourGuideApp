@@ -8,4 +8,19 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="textStyle">
+        <item name="android:paddingLeft">@dimen/padding</item>
+    </style>
+
+    <style name="imageStyle">
+        <item name="android:scaleType">centerCrop</item>
+        <item name="android:padding">@dimen/padding</item>
+    </style>
+
+    <style name="headerStyle">
+        <item name="android:textSize">@dimen/headerSize</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:paddingTop">@dimen/padding</item>
+    </style>
+
 </resources>
