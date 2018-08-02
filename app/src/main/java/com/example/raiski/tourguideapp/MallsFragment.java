@@ -28,18 +28,18 @@ public class MallsFragment extends Fragment {
 		View rootView = inflater.inflate(R.layout.list, container, false);
 
 		final ArrayList<Location> locations = new ArrayList<Location>();
-		locations.add(new Location("Mega Keskus", "Keskuskatu 3",
-				"Muodikasta shoppailua", R.drawable.mega));
-		locations.add(new Location("Torikeskus", "Kauppatori 1-3",
-				"Helppoon arkeen", R.drawable.torikeskus));
-		locations.add(new Location("Epstori", "Kalevankatu 4",
-				"Kaiken keskellä", R.drawable.epstori));
-		locations.add(new Location("Lehtinen", "Puskantie 1",
-				"Se tuttu kauppapaikka", R.drawable.lehtinen));
-		locations.add(new Location("CityPiha", "Kauppakatu 1",
-				"Kaikkea hyvään elämään", R.drawable.citypiha));
-		locations.add(new Location("Seinäjoen Ostoskulma", "Puskantie 13",
-				"Helppo löytää, kulmalla tavataan", R.drawable.ostoskulma));
+		locations.add(new Location(getString(R.string.malls_name1), getString(R.string.malls_address1),
+				getString(R.string.malls_info1), R.drawable.mega));
+		locations.add(new Location(getString(R.string.malls_name2), getString(R.string.malls_address2),
+				getString(R.string.malls_info2), R.drawable.torikeskus));
+		locations.add(new Location(getString(R.string.malls_name3), getString(R.string.malls_address3),
+				getString(R.string.malls_info3), R.drawable.epstori));
+		locations.add(new Location(getString(R.string.malls_name4), getString(R.string.malls_address4),
+				getString(R.string.malls_info4), R.drawable.lehtinen));
+		locations.add(new Location(getString(R.string.malls_name5), getString(R.string.malls_address5),
+				getString(R.string.malls_info5), R.drawable.citypiha));
+		locations.add(new Location(getString(R.string.malls_name6), getString(R.string.malls_address6),
+				getString(R.string.malls_info6), R.drawable.ostoskulma));
 
 		LocationAdapter adapter = new LocationAdapter(getActivity(), locations);
 

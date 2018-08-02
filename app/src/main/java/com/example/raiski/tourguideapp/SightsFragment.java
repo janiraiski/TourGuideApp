@@ -28,12 +28,12 @@ public class SightsFragment extends Fragment {
 		View rootView = inflater.inflate(R.layout.list, container, false);
 
 		final ArrayList<Location> locations = new ArrayList<Location>();
-		locations.add(new Location("Alvar Aalto keskus", "Koulukatu 24",
-				"Church and tower", R.drawable.alvaraalto));
-		locations.add(new Location("Maakuntamuseo", "Kauppakatu 17",
-				"Monimuotoinen ja laaja museokokonaisuus", R.drawable.museo));
-		locations.add(new Location("Lakeuden Risti", "Koulukatu 24",
-				"Huge cross tower", R.drawable.lakeuden_risti));
+		locations.add(new Location(getString(R.string.sights_name1), getString(R.string.sights_address1),
+				getString(R.string.sights_info1), R.drawable.alvaraalto));
+		locations.add(new Location(getString(R.string.sights_name2), getString(R.string.sights_address2),
+				getString(R.string.sights_info2), R.drawable.museo));
+		locations.add(new Location(getString(R.string.sights_name3), getString(R.string.sights_address3),
+				getString(R.string.sights_info3), R.drawable.lakeuden_risti));
 
 		LocationAdapter adapter = new LocationAdapter(getActivity(), locations);
 
